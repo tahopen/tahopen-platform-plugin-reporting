@@ -3,20 +3,20 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.pentaho.reporting.plugin</groupId>
+    <groupId>org.tahopen.reporting.plugin</groupId>
     <artifactId>reporting-platform-plugin-assemblies</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>classic-core-platform-plugin-package</artifactId>
-  <version>10.1.0.0-SNAPSHOT</version>
+  <version>0.1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Pentaho Platform Reporting Plugin Web Package</name>
+  <name>Tahopen Platform Reporting Plugin Web Package</name>
   <properties>
     <js.project.list>classic-core-platform-plugin</js.project.list>
   </properties>
   <dependencies>
     <dependency>
-      <groupId>org.pentaho.reporting.plugin</groupId>
+      <groupId>org.tahopen.reporting.plugin</groupId>
       <artifactId>classic-core-platform-plugin</artifactId>
       <version>${project.version}</version>
       <classifier>js-compressed</classifier>

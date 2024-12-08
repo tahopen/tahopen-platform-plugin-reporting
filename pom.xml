@@ -3,15 +3,15 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.pentaho</groupId>
-    <artifactId>pentaho-ce-jar-parent-pom</artifactId>
-    <version>10.1.0.0-SNAPSHOT</version>
+    <groupId>org.tahopen</groupId>
+    <artifactId>tahopen-ce-jar-parent-pom</artifactId>
+    <version>0.1.0.0-SNAPSHOT</version>
   </parent>
-  <groupId>org.pentaho.reporting.plugin</groupId>
+  <groupId>org.tahopen.reporting.plugin</groupId>
   <artifactId>reporting-platform-plugin</artifactId>
-  <version>10.1.0.0-SNAPSHOT</version>
+  <version>0.1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
-  <name>Pentaho Platform Reporting Plugin</name>
+  <name>Tahopen Platform Reporting Plugin</name>
   <licenses>
     <license>
       <name>GNU Lesser General Public License, version 2.1</name>
@@ -19,20 +19,22 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+  <!--
   <scm>
     <connection>scm:git:git@github.com:pentaho/pentaho-platform-plugin-reporting.git</connection>
     <developerConnection>scm:git:git@github.com:pentaho/pentaho-platform-plugin-reporting.git</developerConnection>
     <url>scm:git:git@github.com:pentaho/pentaho-platform-plugin-reporting.git</url>
   </scm>
+  -->
   <properties>
-    <pentaho-cdf-plugin.version>10.1.0.0-SNAPSHOT</pentaho-cdf-plugin.version>
+    <pentaho-cdf-plugin.version>0.1.0.0-SNAPSHOT</pentaho-cdf-plugin.version>
     <dependency.osgi-bundles.revision>${project.version}</dependency.osgi-bundles.revision>
     <junit.version>4.12</junit.version>
     <frontend-maven-plugin.version>0.0.29</frontend-maven-plugin.version>
     <powermock.version>1.6.4</powermock.version>
     <pentaho-js-build.version>1.0.0</pentaho-js-build.version>
-    <pentaho-reporting.version>10.1.0.0-SNAPSHOT</pentaho-reporting.version>
-    <platform.version>10.1.0.0-SNAPSHOT</platform.version>
+    <pentaho-reporting.version>0.1.0.0-SNAPSHOT</pentaho-reporting.version>
+    <platform.version>0.1.0.0-SNAPSHOT</platform.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <test.long>false</test.long>
     <jaxws-spring.version>1.8</jaxws-spring.version>
@@ -45,8 +47,8 @@
     <test.performance>false</test.performance>
     <license.inception.year>2002</license.inception.year>
     <test.workers>1</test.workers>
-    <commons-gwt.version>10.1.0.0-SNAPSHOT</commons-gwt.version>
-    <common-ui.version>10.1.0.0-SNAPSHOT</common-ui.version>
+    <commons-gwt.version>0.1.0.0-SNAPSHOT</commons-gwt.version>
+    <common-ui.version>0.1.0.0-SNAPSHOT</common-ui.version>
     <runITs>false</runITs>
     <javax.ws.rs-api.version>2.0</javax.ws.rs-api.version>
     <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
@@ -59,25 +61,25 @@
         <version>${guava.version}</version>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-core</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-cda</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-mondrian</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
@@ -89,13 +91,13 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-olap4j</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-pmd</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
@@ -107,7 +109,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-kettle</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
@@ -123,19 +125,19 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-extensions-drill-down</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>legacy-charts</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.library</groupId>
+        <groupId>org.tahopen.reporting.library</groupId>
         <artifactId>libformula</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
@@ -147,8 +149,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-api</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-api</artifactId>
         <version>${platform.version}</version>
         <scope>compile</scope>
         <exclusions>
@@ -159,8 +161,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-core</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-core</artifactId>
         <version>${platform.version}</version>
         <scope>compile</scope>
         <exclusions>
@@ -171,8 +173,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-repository</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-repository</artifactId>
         <version>${platform.version}</version>
         <scope>compile</scope>
         <exclusions>
@@ -183,8 +185,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-extensions</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-extensions</artifactId>
         <version>${platform.version}</version>
         <scope>compile</scope>
         <exclusions>
@@ -237,7 +239,7 @@
         <scope>compile</scope>
       </dependency>
       <dependency>
-        <groupId>org.pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>commons-gwt-widgets</artifactId>
         <version>${commons-gwt.version}</version>
         <scope>compile</scope>
@@ -271,7 +273,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>common-ui</artifactId>
         <version>${common-ui.version}</version>
         <type>zip</type>
@@ -285,8 +287,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-cdf-js</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-cdf-js</artifactId>
         <version>${pentaho-cdf-plugin.version}</version>
         <type>zip</type>
         <scope>compile</scope>
@@ -298,8 +300,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-js-build</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-js-build</artifactId>
         <version>${pentaho-js-build.version}</version>
         <type>zip</type>
         <scope>compile</scope>
@@ -311,8 +313,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-service-coordinator</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-service-coordinator</artifactId>
         <version>${dependency.osgi-bundles.revision}</version>
         <scope>test</scope>
         <exclusions>
@@ -323,8 +325,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-platform-core</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-platform-core</artifactId>
         <version>${platform.version}</version>
         <classifier>tests</classifier>
         <scope>test</scope>
@@ -348,7 +350,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.pentaho.reporting.engine</groupId>
+        <groupId>org.tahopen.reporting.engine</groupId>
         <artifactId>classic-core</artifactId>
         <version>${pentaho-reporting.version}</version>
         <classifier>tests</classifier>
@@ -361,7 +363,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
+        <groupId>org.tahopen</groupId>
         <artifactId>simple-jndi</artifactId>
         <version>${simple-jndi.version}</version>
         <scope>test</scope>
@@ -490,37 +492,4 @@
       </modules>
     </profile>
   </profiles>
-
-
-  <repositories>
-    <repository>
-      <id>pentaho-public</id>
-      <name>Pentaho Public</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>daily</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>interval:15</updatePolicy>
-      </snapshots>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>pentaho-public-plugins</id>
-      <name>Pentaho Public Plugins</name>
-      <url>https://repo.orl.eng.hitachivantara.com/artifactory/pnt-mvn/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-    </pluginRepository>
-  </pluginRepositories>
-
-
 </project>
