@@ -80,7 +80,7 @@
       </dependency>
       <dependency>
         <groupId>org.tahopen.reporting.engine</groupId>
-        <artifactId>classic-extensions-mondrian</artifactId>
+        <artifactId>classic-extensions-drianmon</artifactId>
         <version>${pentaho-reporting.version}</version>
         <scope>compile</scope>
         <exclusions>
@@ -273,7 +273,7 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.tahopen</groupId>
+        <groupId>tahopen</groupId>
         <artifactId>common-ui</artifactId>
         <version>${common-ui.version}</version>
         <type>zip</type>
@@ -300,8 +300,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.tahopen</groupId>
-        <artifactId>tahopen-js-build</artifactId>
+        <groupId>pentaho</groupId>
+        <artifactId>pentaho-js-build</artifactId>
         <version>${pentaho-js-build.version}</version>
         <type>zip</type>
         <scope>compile</scope>
