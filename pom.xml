@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.tahopen</groupId>
     <artifactId>tahopen-ce-jar-parent-pom</artifactId>
-    <version>0.1.0.0-SNAPSHOT</version>
+    <version>0.1.0.0</version>
   </parent>
   <groupId>org.tahopen.reporting.plugin</groupId>
   <artifactId>reporting-platform-plugin</artifactId>
-  <version>0.1.0.0-SNAPSHOT</version>
+  <version>0.1.0.0</version>
   <packaging>pom</packaging>
   <name>Tahopen Platform Reporting Plugin</name>
   <licenses>
@@ -19,13 +19,7 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-  <!--
-  <scm>
-    <connection>scm:git:git@github.com:pentaho/pentaho-platform-plugin-reporting.git</connection>
-    <developerConnection>scm:git:git@github.com:pentaho/pentaho-platform-plugin-reporting.git</developerConnection>
-    <url>scm:git:git@github.com:pentaho/pentaho-platform-plugin-reporting.git</url>
-  </scm>
-  -->
+
   <properties>
     <pentaho-cdf-plugin.version>0.1.0.0-SNAPSHOT</pentaho-cdf-plugin.version>
     <dependency.osgi-bundles.revision>${project.version}</dependency.osgi-bundles.revision>
