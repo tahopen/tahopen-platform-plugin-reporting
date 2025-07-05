@@ -18,7 +18,7 @@
     <js.build.optimizer>uglify</js.build.optimizer>
     <requirejs.config.files.pattern>**/*-require-js-cfg.js</requirejs.config.files.pattern>
     <build.javascriptTestConfigDirectory>${project.build.directory}/test-javascript</build.javascriptTestConfigDirectory>
-    <pentaho-js-build.dir>${build.dependenciesDirectory}/pentaho-js-build</pentaho-js-build.dir>
+    <pentaho-js-build.dir>${build.dependenciesDirectory}/tahopen-js-build</pentaho-js-build.dir>
   </properties>
   <dependencies>
     <dependency>
@@ -142,7 +142,7 @@
       <artifactId>GWT-FX</artifactId>
     </dependency>
     <dependency>
-      <groupId>tahopen</groupId>
+      <groupId>org.tahopen</groupId>
       <artifactId>common-ui</artifactId>
       <version>${common-ui.version}</version>
       <type>zip</type>
@@ -154,8 +154,8 @@
       <type>zip</type>
     </dependency>
     <dependency>
-      <groupId>pentaho</groupId>
-      <artifactId>pentaho-js-build</artifactId>
+      <groupId>org.tahopen</groupId>
+      <artifactId>tahopen-js-build</artifactId>
       <type>zip</type>
     </dependency>
     <dependency>

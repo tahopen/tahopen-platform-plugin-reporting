@@ -27,8 +27,8 @@
     <frontend-maven-plugin.version>0.0.29</frontend-maven-plugin.version>
     <powermock.version>1.6.4</powermock.version>
     <pentaho-js-build.version>1.0.0</pentaho-js-build.version>
-    <pentaho-reporting.version>0.1.0.0-SNAPSHOT</pentaho-reporting.version>
-    <platform.version>0.1.0.0-SNAPSHOT</platform.version>
+    <pentaho-reporting.version>0.1.0.0</pentaho-reporting.version>
+    <platform.version>0.1.0.0</platform.version>
     <commons-collections.version>3.2.2</commons-collections.version>
     <test.long>false</test.long>
     <jaxws-spring.version>1.8</jaxws-spring.version>
@@ -41,8 +41,8 @@
     <test.performance>false</test.performance>
     <license.inception.year>2002</license.inception.year>
     <test.workers>1</test.workers>
-    <commons-gwt.version>0.1.0.0-SNAPSHOT</commons-gwt.version>
-    <common-ui.version>0.1.0.0-SNAPSHOT</common-ui.version>
+    <commons-gwt.version>0.1.0.0</commons-gwt.version>
+    <common-ui.version>0.1.0.0</common-ui.version>
     <runITs>false</runITs>
     <javax.ws.rs-api.version>2.0</javax.ws.rs-api.version>
     <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
@@ -294,8 +294,8 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>pentaho</groupId>
-        <artifactId>pentaho-js-build</artifactId>
+        <groupId>org.tahopen</groupId>
+        <artifactId>tahopen-js-build</artifactId>
         <version>${pentaho-js-build.version}</version>
         <type>zip</type>
         <scope>compile</scope>
