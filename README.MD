@@ -1,4 +1,4 @@
-#pentaho-platform-plugin-reporting
+#tahopen-platform-plugin-reporting
 
 Reporting plugin allows you to run .prpt reports
  on Pentaho platform.
