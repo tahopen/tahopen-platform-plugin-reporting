@@ -1,7 +1,7 @@
 #tahopen-platform-plugin-reporting
 
 Reporting plugin allows you to run .prpt reports
- on Pentaho platform.
+ on Tahopen platform.
 
 All required profiles are activated by default. By default both jar and plugin
 You still can build jar and plugin zip separately by using 'core' and 'web' profiles.
